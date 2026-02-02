@@ -25,10 +25,12 @@ app.use(express.static("public"));
 import userRoutes from "./routes/user.routes.js";
 import classRoutes from "./routes/class.routes.js"
 import paymentRoutes from "./routes/payment.routes.js";
+import subscriberRoutes from "./routes/subscriber.routes.js"
 
 // route dicllaration
 app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/classes", classRoutes);
 app.use("/api/v1/payment", paymentRoutes);
+app.use("/api/v1/subscriber", subscriberRoutes)
 
 export { app };
